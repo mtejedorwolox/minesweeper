@@ -1,0 +1,10 @@
+<div class="minesweeper-cell" (click)="reveal()" (contextmenu)="changeState()" [ngClass]="{ 'revealed': revealed, 'bombed': revealed && mine }">
+  <div [hidden]="revealed">
+    <img [hidden]="hiddenStatus !== 'flagged'" src="assets/images/flag.png">
+    <span [hidden]="hiddenStatus !== 'marked'"> ? </span>
+  </div>
+  <div [hidden]="!revealed">
+    <img [hidden]="!mine" src="assets/images/bomb.png">
+    <span [hidden]="mine || value === 0" [ngClass]="'color-' + value">{{ value }}</span>
+  </div>
+</div>

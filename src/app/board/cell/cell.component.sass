@@ -1,0 +1,51 @@
+.minesweeper-cell
+  display: flex
+  border-top-color: white
+  border-top-style: solid
+  border-top-width: 4px
+  border-left-color: white
+  border-left-style: solid
+  border-left-width: 4px
+  border-bottom-color: grey
+  border-bottom-style: solid
+  border-bottom-width: 4px
+  border-right-color: grey
+  border-right-style: solid
+  border-right-width: 4px
+  width: 36px
+  height: 36px
+  text-align: center
+  justify-content: center
+  align-items: center
+  font-size: 20px
+  background-color: #BBBBBB
+
+  img
+    height: 20px
+
+  span.color-1
+    color: #0200F7
+  span.color-2
+    color: #017F01
+  span.color-3
+    color: #FD0100
+  span.color-4
+    color: #010080
+  span.color-5
+    color: #810102
+  span.color-6
+    color: #008083
+  span.color-7
+    color: #000000
+  span.color-9
+    color: #808080
+
+
+.minesweeper-cell.revealed
+  background-color: #BBBBBB
+  width: 40px
+  height: 40px
+  border: 2px solid grey
+
+.minesweeper-cell.bombed
+  background-color: #DD2222

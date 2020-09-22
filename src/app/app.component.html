@@ -317,6 +317,16 @@
 
 <div class="content" role="main">
 
+  <button id="signinButton">Sign in with Google</button>
+  <script>
+    $('#signinButton').click(function() {
+      // signInCallback defined in step 6.
+      auth2.grantOfflineAccess().then(signInCallback);
+    });
+  </script>
+
+  <minesweeper-board></minesweeper-board>
+
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
